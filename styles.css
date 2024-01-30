@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg-desktop.svg);
+    background-size: auto;
+    color: #fff;
+}
+
+header{
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container::before{
+    content: '';
+    background-color: hsl(257, 40%, 49%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 830px;
+    opacity:  .85;
+}
+
+#illustration{
+    width: 500px;
+    height: 600px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+.hero{
+    width: 37%;
+    padding-top: 20px;
+}
+
+.register{
+    width: 38%;
+    margin-top: 40px;
+    padding: 12px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(82, 74, 74);
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    margin-top: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.social i{
+    margin: 10px;
+}
+
+.social i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 725px){
+
+    #illustration{
+        padding-top: 40px;
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 25px auto;
+    }
+
+    .hero{
+        text-align: center;
+        width: 80%;
+        padding-top: 30px;
+        margin: 25px auto;
+    }
+
+    .social{
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+        color: #fff;
+    }
+    
+}
